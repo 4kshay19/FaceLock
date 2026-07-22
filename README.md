@@ -1,0 +1,2 @@
+# FaceLock---Face-Recognition-Based-Password-Generator-for-Secure-File-Encryption
+**FaceLock** is an AI-powered biometric file security system that uses facial recognition for secure user authentication and AES encryption to protect sensitive files. Built with Python, OpenCV, and Cryptography, it demonstrates modern cybersecurity practices by combining computer vision, secure key management, and file encryption.
