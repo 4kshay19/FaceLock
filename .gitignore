@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 venv/
 __pycache__/
 *.pyc
@@ -7,9 +6,7 @@ __pycache__/
 .env
 .idea/
 .vscode/
-=======
 venv/
 __pycache__/
 *.pyc
 .env
->>>>>>> 5a8c560962b2c82627d442740b580a1e335cd85e
