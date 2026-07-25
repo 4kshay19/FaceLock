@@ -8,11 +8,10 @@ def home():
 
 @app.route("/login")
 def login():
-    return "<h1>Login Page (Coming Soon)</h1>"
-
+    return render_template("login.html")
 @app.route("/register")
 def register():
-    return "<h1>Register Page (Coming Soon)</h1>"
+    return render_template("register.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
