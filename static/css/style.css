@@ -1,64 +1,100 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:linear-gradient(135deg,#3b82f6,#9333ea);
+/* Body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    color: white;
 }
 
-.container{
-    background:white;
-    padding:40px;
-    width:420px;
-    border-radius:15px;
-    text-align:center;
-    box-shadow:0 10px 25px rgba(0,0,0,.2);
+/* Main Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.logo{
-    font-size:70px;
+/* Card */
+.card {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    padding: 40px;
+    width: 420px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
 }
 
-h1{
-    margin-top:10px;
-    color:#333;
+/* Title */
+.card h1 {
+    font-size: 2.3rem;
+    margin-bottom: 15px;
 }
 
-p{
-    margin:20px 0;
-    color:#666;
+/* Subtitle */
+.subtitle {
+    color: #d1d5db;
+    margin-bottom: 30px;
+    line-height: 1.6;
 }
 
-.buttons{
-    display:flex;
-    justify-content:center;
-    gap:20px;
+/* Buttons */
+.btn {
+    width: 100%;
+    padding: 15px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.btn{
-    text-decoration:none;
-    background:#2563eb;
-    color:white;
-    padding:12px 28px;
-    border-radius:8px;
-    transition:.3s;
+/* Hover Effect */
+.btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-3px);
 }
 
-.btn:hover{
-    background:#1d4ed8;
+/* Secondary Button */
+.secondary {
+    background: #10b981;
 }
 
-.secondary{
-    background:#16a34a;
+.secondary:hover {
+    background: #059669;
 }
 
-.secondary:hover{
-    background:#15803d;
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 20px;
+    color: #d1d5db;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+
+    .card {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .card h1 {
+        font-size: 2rem;
+    }
+
 }

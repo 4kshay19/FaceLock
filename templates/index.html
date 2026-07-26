@@ -7,27 +7,30 @@
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
+
 <body>
 
     <div class="container">
 
-        <div class="logo">
-            🔐
-        </div>
+        <div class="card">
 
-        <h1>FaceLock</h1>
+            <h1>🔐 FaceLock</h1>
 
-        <p>
-            Secure your files using Face Recognition Authentication.
-        </p>
+            <p class="subtitle">
+                Secure File Authentication using Face Recognition
+            </p>
 
-        <div class="buttons">
-            <a href="/login" class="btn">Login</a>
+            <button class="btn">📷 Scan Face</button>
 
-            <a href="/register" class="btn secondary">Register</a>
+            <button class="btn secondary">📂 Upload File</button>
+
         </div>
 
     </div>
+
+    <footer>
+        © 2026 FaceLock | Built with Flask
+    </footer>
 
 </body>
 </html>
