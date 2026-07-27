@@ -29,3 +29,18 @@ FaceLock is a Python-based file protection system that uses face recognition for
 - Added responsive CSS
 - Connected Flask routing
 - Added Scan Face and Upload File UI
+## 📅 Development Progress
+
+### ✅ Day 5 (27 July 2026)
+
+#### Completed
+- Created Register Face page (`register.html`)
+- Created Login page (`login.html`)
+- Created Dashboard page (`dashboard.html`)
+- Added Flask routes for all pages
+- Connected homepage navigation
+- Linked CSS across all pages
+- Improved project folder structure
+
+#### Current Project Structure
+
