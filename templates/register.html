@@ -12,11 +12,21 @@
 <div class="container">
     <div class="card">
 
-        <h1>📷 Face Registration</h1>
+   <h1>📷 Face Registration</h1>
 
-        <h3>Camera Preview</h3>
+<div class="input-group">
+    <label for="username">Username</label>
+    <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Enter your username"
+        required>
+</div>
 
-<img src="{{ url_for('static', filename='images/camera_placeholder.png') }}"
+<h3>Camera Preview</h3>
+
+<img src="{{ url_for('static', filename='images/camera_placeholder.png') }}" alt="Camera Preview">
      alt="Camera Preview"
      width="350">
         <br><br>
