@@ -63,3 +63,13 @@ FaceLock is a Python-based file protection system that uses face recognition for
 
 ### Next Goal
 Implement OpenCV face capture and store facial embeddings securely.
+## Day 8 Progress
+
+### Added User Profile Page
+
+Features
+- User Information
+- Face Registration Status
+- Encryption Statistics
+- Modern Responsive UI
+- Dashboard Navigation

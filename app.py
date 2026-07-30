@@ -24,8 +24,8 @@ if __name__ == "__main__":
 @app.route("/profile")
 def profile():
     user = {
-        "name": "Arjun Sharma",
-        "email": "arjun.sharma@example.com",
+        "name": "Arjun Reddy",
+        "email": "arjun.reddy@example.com",
         "joined": "July 2026",
         "face": "Registered",
         "encrypted": 18,
