@@ -21,14 +21,14 @@ def dashboard():
 if __name__ == "__main__":
     app.run(debug=True)
 
- @app.route("/profile")
+@app.route("/profile")
 def profile():
     user = {
-        "name": " ",
-        "email": "mike@example.com",
+        "name": "Arjun Sharma",
+        "email": "arjun.sharma@example.com",
         "joined": "July 2026",
         "face": "Registered",
         "encrypted": 18,
         "decrypted": 11
     }
-    return render_template("profile.html", user=user)   
+    return render_template("profile.html", user=user)
