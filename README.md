@@ -85,3 +85,4 @@ Features
 - Improved responsive UI
 - Cleaned project folder structure
 - Refactored JavaScript and CSS
+akshay
