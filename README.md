@@ -73,12 +73,15 @@ Features
 - Encryption Statistics
 - Modern Responsive UI
 - Dashboard Navigation
-## Day 9
+## 📅 Day 9 Progress
 
-### Features Added
+### ✅ Completed
 
-- Registration Progress Bar
-- Registration Status Panel
-- Face Registration Simulation
-- Success Message
-- Responsive UI Improvements
+- Merged register.html and register_face.html into a single page
+- Connected Flask registration route
+- Added integrated webcam preview
+- Added image capture functionality
+- Added registration status messages
+- Improved responsive UI
+- Cleaned project folder structure
+- Refactored JavaScript and CSS
