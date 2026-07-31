@@ -13,6 +13,22 @@
     <div class="card">
 
    <h1>📷 Face Registration</h1>
+   <!-- Registration Progress Bar -->
+<div class="progress-container">
+    <div id="progressBar" class="progress-bar">
+        0%
+    </div>
+</div>
+<p id="cameraStatus">📷 Camera: Waiting...</p>
+<p id="faceStatus">😀 Face Detection: Not Detected</p>
+<p id="captureStatus">📸 Capture: Pending</p>
+<p id="saveStatus">💾 Save: Pending</p>
+
+<div id="messageBox"></div>
+<!-- Camera Section -->
+<div class="camera-container">
+    <!-- Camera Preview -->
+</div>
 
 <div class="input-group">
     <label for="username">Username</label>
@@ -40,6 +56,6 @@
 
     </div>
 </div>
-
+<script src="{{ url_for('static', filename='js/register.js') }}"></script>
 </body>
 </html>
