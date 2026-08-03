@@ -22,7 +22,6 @@ FaceLock is a Python-based file protection system that uses face recognition for
 🚧 Currently under development.
 # FaceLock---Face-Recognition-Based-Password-Generator-for-Secure-File-Encryption
 **FaceLock** is an AI-powered biometric file security system that uses facial recognition for secure user authentication and AES encryption to protect sensitive files. Built with Python, OpenCV, and Cryptography, it demonstrates modern cybersecurity practices by combining computer vision, secure key management, and file encryption.
-## Day 4 Progress
 ![image alt](https://github.com/4kshay19/FaceLock---Face-Recognition-Based-Password-Generator-for-Secure-File-Encryption/blob/4e124d41a76acbbfb0dbf590ac7b56592872a84a/Screenshot%202026-07-26%20104848.png)
 
 - Designed authentication homepage
@@ -30,8 +29,6 @@ FaceLock is a Python-based file protection system that uses face recognition for
 - Connected Flask routing
 - Added Scan Face and Upload File UI
 ## 📅 Development Progress
-
-### ✅ Day 5 (27 July 2026)
 
 #### Completed
 - Created Register Face page (`register.html`)
@@ -50,8 +47,7 @@ FaceLock is a Python-based file protection system that uses face recognition for
 - Secure File Encryption
 - Password Generation
 - Local Authentication
-- Educational Security Project
-## Day 7 Progress
+- Educational Security Project.
 
 ### Features Added
 - Created Face Registration page
@@ -63,7 +59,6 @@ FaceLock is a Python-based file protection system that uses face recognition for
 
 ### Next Goal
 Implement OpenCV face capture and store facial embeddings securely.
-## Day 8 Progress
 
 ### Added User Profile Page
 
