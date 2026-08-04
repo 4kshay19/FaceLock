@@ -68,3 +68,27 @@ Features
 - Encryption Statistics
 - Modern Responsive UI
 - Dashboard Navigation
+<<<<<<< HEAD
+=======
+
+
+### ✅ Completed
+
+- Merged register.html and register_face.html into a single page
+- Connected Flask registration route
+- Added integrated webcam preview
+- Added image capture functionality
+- Added registration status messages
+- Improved responsive UI
+- Cleaned project folder structure
+- Refactored JavaScript and CSS
+## ✅ Completed
+
+- Created a Face Authentication (Login) page.
+- Added webcam support for login.
+- Captured and stored multiple face images.
+- Added registration progress tracking.
+- Improved camera and face detection status updates.
+- Enhanced project folder organization.
+- Improved navigation across Home, Register, and Login pages.
+>>>>>>> day9-registration-progress
