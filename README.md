@@ -85,4 +85,12 @@ Features
 - Improved responsive UI
 - Cleaned project folder structure
 - Refactored JavaScript and CSS
+## ✅ Completed
 
+- Created a Face Authentication (Login) page.
+- Added webcam support for login.
+- Captured and stored multiple face images.
+- Added registration progress tracking.
+- Improved camera and face detection status updates.
+- Enhanced project folder organization.
+- Improved navigation across Home, Register, and Login pages.
