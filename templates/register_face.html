@@ -33,6 +33,84 @@ Waiting for registration...
 | ← Back to Home                      |
 +-------------------------------------+
 
+
+
++----------------------------------------------------+
+|                 🔐 FaceLock                         |
+| Secure File Encryption using Face Recognition       |
+|                                                    |
+|      [ Register Face ]   [ Login ]                |
+|                                                    |
++----------------------------------------------------+
+
+
+Username
++-----------------------------------+
+
+Camera Preview
++----------------------------+
+|                            |
+|       Live Camera          |
+|                            |
++----------------------------+
+
+██████████░░░░░░░ 60%
+
+Camera ✔
+Face Detected ✔
+Captured ✔
+Saved ⏳
+
+[ Capture ]
+[ Register ]
+
+
+
++--------------------------------------+
+| 🔒 Face Authentication               |
+|                                      |
+| Camera Preview                       |
+|                                      |
+| Status : Waiting...                  |
+|                                      |
+| [ Open Camera ]                      |
+| [ Authenticate ]                     |
++--------------------------------------+
+
+
++----------------------------------------+
+
+👋 Welcome Akshay
+
++------------+-------------+
+| Upload     | My Files    |
++------------+-------------+
+
++------------+-------------+
+| Encrypt    | Decrypt     |
++------------+-------------+
+
++------------+-------------+
+| Logout                    |
++---------------------------+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="button-group">
 
     <button id="capture-btn">
@@ -66,3 +144,7 @@ readonly>
 type="text"
 value="{{ session['username'] }}"
 readonly>
+<input
+    type="text"
+    value="{{ username }}"
+    readonly>

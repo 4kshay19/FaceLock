@@ -88,3 +88,68 @@ user = {
     "email": email,
     "password": hashed_password
 }
+username = request.form["username"]
+
+folder_path = os.path.join("static", "faces", username)
+
+os.makedirs(folder_path, exist_ok=True)
+@app.route("/register", methods=["GET", "POST"])
+def register():
+
+    if request.method == "POST":
+
+        username = request.form["username"]
+        fullname = request.form["fullname"]
+        email = request.form["email"]
+        password = request.form["password"]
+        confirm_password = request.form["confirm_password"]
+
+        if password != confirm_password:
+            return "Passwords do not match"
+
+        # Save username in session
+        session["username"] = username
+
+        # Create user's face folder
+        folder_path = os.path.join("static", "faces", username)
+        os.makedirs(folder_path, exist_ok=True)
+
+        return redirect(url_for("register_face"))
+
+    return render_template("register.html")
+
+@app.route("/register-face")
+def register_face():
+
+    username = session.get("username")
+
+    return render_template(
+        "register_face.html",
+        username=username
+    )
+from flask import render_template
+import os
+
+UPLOAD_FOLDER = "uploads"
+
+@app.route("/myfiles/<username>")
+def my_files(username):
+
+    user_folder = os.path.join(UPLOAD_FOLDER, username)
+
+    files = []
+
+    if os.path.exists(user_folder):
+        for file in os.listdir(user_folder):
+            path = os.path.join(user_folder, file)
+
+            files.append({
+                "name": file,
+                "size": round(os.path.getsize(path) / 1024, 2)
+            })
+
+    return render_template(
+        "my_files.html",
+        username=username,
+        files=files
+    )

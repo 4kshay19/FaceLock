@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Files</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/dashboard.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>📁 My Uploaded Files</h1>
+
+    <h3>Welcome, {{ username }}</h3>
+
+    <table>
+
+        <tr>
+            <th>File Name</th>
+            <th>Size (KB)</th>
+        </tr>
+
+        {% if files %}
+
+            {% for file in files %}
+
+            <tr>
+                <td>{{ file.name }}</td>
+                <td>{{ file.size }}</td>
+            </tr>
+
+            {% endfor %}
+
+        {% else %}
+
+            <tr>
+                <td colspan="2">
+                    No uploaded files found.
+                </td>
+            </tr>
+
+        {% endif %}
+
+    </table>
+
+    <br>
+
+    <a href="/">⬅ Back to Dashboard</a>
+
+</div>
+
+</body>
+</html>
