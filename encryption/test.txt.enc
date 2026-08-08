@@ -1,0 +1,8 @@
+from encryption.encrypt import encrypt_file
+
+input_file = "test.txt"
+output_file = "test.txt.enc"
+
+encrypt_file(input_file, output_file)
+
+print("File encrypted successfully!")

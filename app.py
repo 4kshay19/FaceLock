@@ -153,3 +153,6 @@ def my_files(username):
         username=username,
         files=files
     )
+from encryption.encrypt import encrypt_file
+import os
+from flask import request, redirect, url_for, flash

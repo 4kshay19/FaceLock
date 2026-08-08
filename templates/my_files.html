@@ -19,28 +19,35 @@
         <tr>
             <th>File Name</th>
             <th>Size (KB)</th>
-        </tr>
+     {% for file in files %}
 
-        {% if files %}
+<tr>
 
-            {% for file in files %}
+    <td>{{ file.name }}</td>
 
-            <tr>
-                <td>{{ file.name }}</td>
-                <td>{{ file.size }}</td>
-            </tr>
+    <td>{{ file.size }} KB</td>
 
-            {% endfor %}
+    <td>
 
-        {% else %}
+        <form
+            action="{{ url_for(
+                'encrypt_uploaded_file',
+                username=username,
+                filename=file.name
+            ) }}"
+            method="POST">
 
-            <tr>
-                <td colspan="2">
-                    No uploaded files found.
-                </td>
-            </tr>
+            <button type="submit">
+                🔒 Encrypt
+            </button>
 
-        {% endif %}
+        </form>
+
+    </td>
+
+</tr>
+
+{% endfor %}  
 
     </table>
 
