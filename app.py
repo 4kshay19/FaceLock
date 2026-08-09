@@ -156,3 +156,33 @@ def my_files(username):
 from encryption.encrypt import encrypt_file
 import os
 from flask import request, redirect, url_for, flash
+@app.route("/encrypt/<username>/<filename>", methods=["POST"])
+def encrypt_uploaded_file(username, filename):
+
+    input_file = os.path.join(
+        "uploads",
+        username,
+        filename
+    )
+
+    encrypted_folder = os.path.join(
+        "encrypted_files",
+        username
+    )
+
+    os.makedirs(encrypted_folder, exist_ok=True)
+
+    output_file = os.path.join(
+        encrypted_folder,
+        filename + ".enc"
+    )
+
+    if not os.path.exists(input_file):
+        return "File not found", 404
+
+    encrypt_file(input_file, output_file)
+
+    return redirect(url_for(
+        "my_files",
+        username=username
+    ))
